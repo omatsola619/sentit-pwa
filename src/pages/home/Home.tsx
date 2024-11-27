@@ -11,8 +11,14 @@ import Layout from '../../layouts/Layout';
 
 function Home() {
   const [hideBal, setHideBal] = useState(false);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  const openSidebar = () => {
+    setSidebarOpen(true);
+  };
+
   return (
-    <Layout>
+    <Layout setSidebarOpen={setSidebarOpen} sidebarOpen={sidebarOpen}>
       <div className={'bg-accentLight h-screen'}>
         <div
           className={'w-full h-[200px] bg-no-repeat bg-cover bg-bottom'}
@@ -23,7 +29,10 @@ function Home() {
           <div
             className={'flex flex-row align-center gap-3 text-white pt-3 px-4'}
           >
-            <div className="bg-white rounded-full w-[40px] h-[40px]"></div>
+            <div
+              className="bg-white rounded-full w-[40px] h-[40px]"
+              onClick={openSidebar}
+            ></div>
             <div>
               <div className={'text-sm'}>Welcome,</div>
               <div className={'text-base'}>Omatsola</div>
