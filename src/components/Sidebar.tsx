@@ -92,12 +92,13 @@ function Sidebar() {
         <img src={support} alt="" />
         <div className="text-[#FFFFFF] text-[14px] pl-[5px]">Support</div>
       </div>
-      <div className="flex flex-row items-center flex-1 ml-[42px]">
+
+      <div className="flex flex-row items-center flex-1 ml-[42px] mt-[50px]">
         <img src={logoutIcon} alt="" />
         <div className="text-[#FFFFFF] text-[14px] pl-[5px]">Logout</div>
       </div>
 
-      <div className="text-[#FFFFFF] pb-[50px] text-[11px] pl-[42px]">
+      <div className="text-[#FFFFFF] pb-[50px] text-[11px] pl-[42px] mt-[40px]">
         Version
       </div>
     </div>
